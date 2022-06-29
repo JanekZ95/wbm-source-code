@@ -1,0 +1,99 @@
+video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+}
+
+.main-container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+.main-container > h1 {
+	color: #fff;
+	font-size: 70px;
+	margin-top: -100px;
+}
+
+.main-container > p {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.main-btns {
+	margin-top: 25px;
+}
+
+.search-btn {
+	background-color: transparent;
+	color: #fff;
+	padding: 8px 20px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	padding: 12px 26px;
+	font-size: 25px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.342);
+}
+
+.search-btn:hover {
+	transition: all 0.3s ease-out;
+	background: #fff;
+	color: #242424;
+	transition: 500ms;
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 960px) {
+	.main-container > h1 {
+		font-size: 50px;
+		margin-top: -125px;
+	}
+
+	.main-container > p {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.main-container > h1 {
+		font-size: 35px;
+		margin-top: -100px;
+	}
+
+	.main-container > p {
+		font-size: 20px;
+	}
+
+	.search-btn {
+		font-size: 20px;
+		padding: 12px 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-container > h1 {
+		font-size: 30px;
+		margin-top: -100px;
+		text-align: center;
+		padding: 0px 10px;
+	}
+
+	.main-container > p {
+		font-size: 20px;
+	}
+
+	.search-btn {
+		font-size: 20px;
+		padding: 12px 20px;
+	}
+}

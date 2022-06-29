@@ -1,0 +1,51 @@
+.list {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.listTitle {
+    color: wheat;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0px 50px 65px;
+}
+
+.wrapperList {
+    overflow: hidden;
+    position: relative;
+}
+
+.containerList {
+    display: flex;
+    margin: 20px 0px 20px 65px;
+    width: max-content;
+    transform: translateX(0px);
+    transition: all 1s ease;
+}
+
+.sliderArrowLeft{
+    width: 60px;
+    height: 100%;
+    color: white;
+    background-color: rgb(15, 15, 15, 0.5);
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderArrowRight{
+    width: 60px;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15, 0.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}

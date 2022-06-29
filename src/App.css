@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif; 
+  
+}
+
+.fade-appear,
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 300ms linear 50ms;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit.fade-exit-active {
+opacity: 0;
+transition: opacity 150ms linear;
+}

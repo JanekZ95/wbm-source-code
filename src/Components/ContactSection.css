@@ -1,0 +1,166 @@
+video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.welcome-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.welcome-container-content > h1 {
+	color: #fff;
+	font-size: 60px;
+}
+
+.welcome-container-content > h3 {
+	color: #fff;
+}
+
+.left {
+	margin: 50px;
+	padding-top: 30px;
+}
+
+.right {
+	margin: 50px;
+}
+
+.contact-section-wrapper {
+	display: flex;
+	gap: 50px;
+	margin-top: 50px;
+	justify-content: center;
+	position: relative;
+}
+
+.contact-section-wrapper::after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 90%;
+	background-color: #fff;
+	top: 2%;
+}
+
+@media screen and (max-width: 1950px) {
+	
+	.welcome-container-content {
+		margin-top: 40px;
+	}
+}
+@media screen and (max-width: 950px) {
+	
+	.welcome-container-content {
+		margin-top: 40px;
+	}
+	
+	.welcome-container-content > h1 {
+		font-size: 40px;
+	}
+
+	.welcome-container {
+		height: 100%;
+	}
+
+	.right {
+		padding: 10px;
+		min-width: 300px;
+	}
+
+	.left {
+		margin-top: 80px;
+		padding: 10px;
+		min-width: 300px;
+	}
+
+	.contact-section-wrapper {
+		gap: 0px;
+		max-width: 100px;
+	}
+
+	.items-container {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		gap: 10px;
+	}
+
+	#text-area {
+		min-height: 150px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.welcome-container-content > h1 {
+		font-size: 35px;
+	}
+
+	.welcome-container {
+		display: flex;
+	}
+
+	.right {
+		width: 400px;
+		margin-bottom: 20px;
+	}
+
+	.left {
+		width: 400px;
+		margin: 0px;
+	}
+
+	.contact-section-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-section-wrapper::after {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.welcome-container {
+		display: flex;
+	}
+
+	.right {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.left {
+		width: 300px;
+		margin: 0px;
+	}
+
+	.contact-section-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-section-wrapper::after {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 800px) {
+	.welcome-container {
+		height: 100%;
+	}
+}
